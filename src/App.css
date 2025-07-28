@@ -1,0 +1,389 @@
+#container{
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 70px;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 110px);
+    /* background-color: rgb(250, 241, 241) */
+    background-color: rgb(206, 206, 219)
+}
+#footer{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(211, 225, 223);
+}
+#header .headerlogo{  
+    width: 60px;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    top: 15px;
+    font-size: 22pt;
+    font-weight: bold;
+    object-fit: contain;
+    height:55px;
+}
+#header .headerTitle{
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    top: 10PX;
+    font-size: 22pt;
+    font-weight: bold;
+}
+#header .headerTitle span{
+    /* color:rgb(47,44, 44) */
+    color:rgba(90, 160, 252, 0.966)
+}
+
+#header .signinlogo{
+    position: relative;
+    width: relative; 
+    height: 40px;
+    float: right;
+    margin: 10px;
+    top: 4px;
+    cursor: pointer;
+
+}
+
+#header .signin{
+  position: relative;
+  float: right;
+  font-size: 12pt;
+  top: 30px;
+  color: rgb(117, 113, 113);
+  cursor: pointer;
+}
+#header .signin:hover{
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+#footer .copyrighttext{
+    position: relative;
+    float: left;
+    color: rgb(69, 67, 67);
+    margin-left: 10px;
+    top: 15px;
+    
+}
+#footer .copyrighttext:hover{
+    font-weight: bold;
+}
+#footer .socialmedia{
+    position: relative;
+    align-items: center;
+    float: right;
+    width: 500px;  
+    top: 10px;
+}
+#footer .socialmedia img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: right;
+  }
+#content .text1{
+position: relative;
+margin-left: 30px;
+font-weight: bold;
+top: 67px;
+font-size: 12pt;
+color: darkgreen;
+}
+#content .text2{
+    position: relative;
+    margin-left: 30px;
+    font-weight: bold;
+    top: 72px;
+    font-size: 22pt;
+    }
+#content .text3{
+    position: relative;
+    margin-left: 30px;
+    top: 87px;
+    font-size: 16pt;
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    }
+#searchBar{
+    display: block;
+    position: relative;
+    width: 720px;
+    height: 30px;
+    margin-left: 15px;
+    top: 120px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+#searchText{
+    width: 240px;
+    height: 35px;
+    position: relative;
+    background: url('searchicon.png') no-repeat;
+    background-position: 0px center;
+    padding-left: 40px;
+    font-size: 12pt;
+    border: none;
+    bottom: 8px;
+}
+#searchLocation{
+    width: 240px;
+    height: 42px;
+    position: relative;
+    background: url('location.png') no-repeat;
+    background-size: 30px 20px;
+    background-position: 0px center;
+    padding-left: 40px;
+    font-size: 12pt;
+    margin-left: 15px;
+    bottom: 8px;
+    border: none;
+    border-left: 2px solid silver;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+#searchButton{
+    height: 40px;
+    width: 110px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative; 
+    margin-left: 10px;
+    bottom: 7px;  
+}
+
+#popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 999;
+    display: none; /*this is the important point*/
+ 
+}
+
+ #popupWindow{
+    position: relative;
+    width: 310px;
+    height: 450px;
+    background-color: white;
+    margin-left: 50%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;   
+}
+
+#popupheader{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(13, 180, 104);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: smokey;
+    font-style:sans-serif;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+#popupsignin{
+width: calc(100%-10px);
+height: calc(100%-60px);
+background-color: white;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+padding: 5px;
+}
+#popupsignin .usernameLabel{
+   display: block;
+   padding: 40px 0px 3px 0px;
+}
+input{
+    width: 280px;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+#popupsignin .passwordLabel{
+    display: block;
+    padding: 10px 0px 3px 0px;
+    border-radius: 5px;
+}
+#forgotPassword{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    /* float: right; */
+    font-size: 10pt;
+}
+
+#forgotPassword span{
+    color:  rgb(3, 142, 79);
+    cursor: pointer;
+    font-weight: bold;
+    font-style:roboto;
+}
+#forgotPassword span:hover{
+    text-decoration: underline;
+}
+#signinButton{
+    width:100%;
+    height: 35px;
+    background-color: rgb(13, 180, 104);
+    color: white;
+    border: none;
+    border-radius: 5px;   
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+#signinButton:hover{
+    font-weight: bold;
+}
+ #div1{
+    width: 100%;
+    height: 80px;
+ }
+#div2{
+    /* margin-top: 30px;
+    background-color:  rgb(13, 180, 104);
+     */
+
+     width: 100%;
+     text-align: center;
+     height: 20px;
+     margin-bottom: 24px;
+}
+#div2 span{
+    display: block;
+    color: rgb(13, 180, 104);
+    cursor: pointer;
+    font-weight: bold;
+}
+#signup{
+width: calc(100%-10px);
+height: calc(100%-60px);
+/* margin-top: 30px; */
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+padding: 5px;
+/* background-color: yellow; */
+display: none;
+}
+#signupButton{
+    width: 100%;
+    height: 35px;
+    background: rgb(13, 180, 104);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#role{
+    width: calc(100% - 10px);
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+#div3{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 3px 0px;
+    
+}
+#div3 span{
+    display: block;
+    color:  rgb(13, 180, 104);
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}
+#password, #confirmpassword {
+    font-weight: bold;
+} 
+
+
+
+/* Add a gradient background to the content area */
+#content {
+    width: 100%;
+    height: calc(100% - 110px);
+    background: linear-gradient(135deg, rgba(90, 160, 252, 0.8), rgba(206, 206, 219, 0.8));
+    animation: backgroundFade 10s infinite alternate;
+}
+
+/* Add animation for background gradient */
+@keyframes backgroundFade {
+    0% {
+        background: linear-gradient(135deg, rgba(90, 160, 252, 0.8), rgba(206, 206, 219, 0.8));
+    }
+    100% {
+        background: linear-gradient(135deg, rgba(13, 180, 104, 0.8), rgba(211, 225, 223, 0.8));
+    }
+}
+
+/* Add hover effect for buttons */
+#searchButton, #signinButton, #signupButton {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#searchButton:hover, #signinButton:hover, #signupButton:hover {
+    transform: scale(1.1);
+    background-color: darkgreen;
+}
+
+/* Add subtle animation to the popup */
+#popup {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add a glowing effect to input fields on focus */
+input:focus, #searchText:focus, #searchLocation:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(13, 180, 104, 0.8);
+    border-color: rgba(13, 180, 104, 0.8);
+}
+
+/* Add hover effect for social media icons */
+#footer .socialmedia img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* Add animation to header logo */
+#header .headerlogo {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

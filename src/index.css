@@ -1,0 +1,17 @@
+#root{
+  width: 100%;
+  height: 100%;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: sans-serif;
+}
+p{
+  font-size: 1.5em;
+}
+/* whenever u type in the text box it wont show the outline, in the search bar u can see this funcationality demonstrated */
+:focus{
+  outline: none;
+}
